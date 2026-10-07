@@ -1,0 +1,163 @@
+.compact-table-wrapper {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.compact-table {
+    width: 100% !important;
+    min-width: 0;
+    max-width: 100%;
+
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    background-color: transparent;
+    --header-row-font-size: .45rem;
+    /*--body-row-font-size: .5rem;*/
+}
+
+.compact-table :is(
+    th,
+    td
+) {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+/* Refuerza el override de Bootstrap Table. */
+.compact-table > :not(caption) > * > * {
+    padding: .1rem;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.compact-table :is(
+    p,
+    div
+) {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.compact-table p {
+    margin: 0;
+}
+
+.compact-table .compact-table-cell-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.compact-table .compact-table-cell-text {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.05;
+}
+.compact-table .compact-table-cell-text.strong-value {
+    font-weight: 700;
+}
+
+/*.compact-table .compact-table-header-row {*/
+/*    font-size: var(--header-row-font-size);*/
+/*}*/
+
+.compact-table-body-span-row.transparent,
+.compact-table-header-row.transparent {
+    background-color: transparent;
+}
+
+.compact-table-body-span-row.emphasized,
+.compact-table-header-row.emphasized {
+    background-color: var(--span-color);
+}
+
+.compact-table-header-row .compact-table-header-cell {
+    font-weight: 400;
+}
+
+.compact-table-header-cell .cell-header-end {
+    padding-right: .1rem;
+}
+
+.compact-table .compact-table-body-row {
+    border-bottom: 1px solid var(--soft-border-color);
+    /*font-size: var(--body-row-font-size);*/
+}
+
+.compact-table .compact-table-body-row--span {
+    border-bottom: 0;
+}
+
+.compact-table .compact-table-body-span-row {
+    /*font-size: var(--body-row-font-size);*/
+    font-weight: 300;
+}
+
+.compact-table-body-cell .cell-body-label-row {
+    /*padding-left: .1rem;*/
+    font-weight: 400;
+}
+
+.compact-table-body-cell .cell-body-end {
+    /*padding-right: .1rem;*/
+}
+
+
+
+.compact-table .compact-table-empty-data-icon {
+    display: inline-block;
+    width: .55rem;
+    height: .55rem;
+    max-width: .55rem;
+    max-height: .55rem;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.compact-table .compact-table-cell-marker {
+    width: .25rem;
+    height: .25rem;
+    margin: 0;
+    border-radius: 999px;
+    background: currentColor;
+}
+
+
+@media only screen and (min-width: 350px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1366px) {}
+@media only screen and (min-width: 1536px) {
+    .compact-table .compact-table-header-row {
+        font-size: .34rem;
+    }
+
+    .compact-table .compact-table-body-row {
+        font-size: .4rem;
+    }
+
+    .compact-table .compact-table-body-span-row {
+        font-size: .4rem;
+    }
+}
+@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 2560px) {}
+
+
+.compact-table-body-cell.text-start {
+    padding-left: .2rem;
+}

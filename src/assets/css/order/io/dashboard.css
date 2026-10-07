@@ -1,0 +1,140 @@
+.stockpile-mina-wrapper {
+    background-image: url("/assets/img/icons/extra/mountain_background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-mov-mina {
+    gap: .3rem
+}
+
+
+
+.table-responsive-movimiento-mina {
+    background-color: transparent;
+    border-collapse: collapse;
+    /*border-radius: 15px;*/
+}
+.table-responsive-movimiento-mina :is(
+    td
+) {
+    background-color: transparent;
+    vertical-align: middle;
+    padding: 0;
+    text-align: center;
+
+}
+
+.table-responsive-movimiento-mina thead {
+    background: var(--marker-color);
+}
+.table-responsive-movimiento-mina tbody.b {
+    /*border-top: 1px solid var(--primary-border-color) !important;*/
+    /*background: #e0e0e0;*/
+    /*border-radius: 15px;*/
+}
+
+.table-label-data {
+    /*border-top-right-radius: 15px;*/
+    /*border-top-left-radius: 15px;*/
+    /*border-bottom: 1px solid var(--primary-border-color);*/
+    border-top: 1px solid var(--primary-border-color);
+    padding: 0.05rem;
+    /*background: var(--marker-color);*/
+}
+.table-label-data-0 {
+    border-top: 1px solid var(--primary-border-color);
+}
+
+.table-responsive-movimiento-mina thead td {
+    font-weight: 500;
+}
+
+.table-responsive-movimiento-mina tbody td {
+    text-align: center;
+    font-weight: 400;
+    line-height: 1;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+}
+
+.tbody-last {
+    border-bottom: 1px solid var(--primary-border-color);
+}
+.table-responsive-movimiento-mina .movimiento_mina_table-real-value {
+    font-weight: 500;
+}
+
+/*.data-wrapper-mov-mina {*/
+/*    !*border-radius: 5px;*!*/
+/*    !*border: 1px solid var(--primary-border-color);*!*/
+/*}*/
+
+.table-upper td {
+    /*border-radius: 5px;*/
+    /*border: 1px solid var(--primary-border-color);*/
+    font-weight: 600 !important;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+}
+
+@media only screen and (min-width: 350px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1366px) {}
+@media only screen and (min-width: 1536px) {
+    .equipos-ch-wrapper .chancador-img {
+        height: 3.3rem;
+    }
+    .equipos-ch-wrapper .correa-stmg-img {
+        width: 2.5rem;
+    }
+    .equipos-ch-wrapper .correa-smg-img-position-2 {
+        padding-top: .5rem;
+    }
+    .equipos-ch-wrapper .correa-smg-img-position-3 {
+        padding-top: 1rem;
+    }
+
+    .equipos-ch-wrapper .feeders-chart {
+        height: 3rem !important;
+        width: 4rem !important;
+    }
+    .equipos-ch-wrapper .feeders-chart .xtick text {
+        font-size: .58rem !important;
+    }
+
+    .equipos-ch-wrapper .stockpile-mina-chart {
+        width: 5rem !important;
+        height: 3.2rem !important;
+    }
+    .equipos-ch-wrapper .stockpile-mina-chart .trace.bars:first-child text {
+        font-size: .9rem !important;
+    }
+    .equipos-ch-wrapper .stockpile-mina-chart .trace.bars:last-child text {
+        font-size: .7rem !important;
+        font-weight: 500 !important;
+    }
+
+    .equipos-ch-wrapper .stockpile-mina-wrapper {
+        height: 3.2rem !important;
+    }
+
+    .vertimil-img {
+        height: 2.2rem;
+    }
+    .bomba-img {
+        height: .9rem;
+    }
+
+    .str-v1-img {
+        height: 1rem;
+    }
+
+    .barco-img {
+        height: 3rem;
+    }
+}
+@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 2560px) {}

@@ -1,0 +1,14 @@
+@media only screen and (min-width: 350px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 1280px) {
+    .sag-img {
+        width: 1.8rem;
+    }
+    .molino-bolas-img {
+        width: 2rem;
+    }
+}
+@media only screen and (min-width: 1366px) {}
+@media only screen and (min-width: 1536px) {}
+@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 2560px) {}

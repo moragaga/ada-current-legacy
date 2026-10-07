@@ -1,0 +1,218 @@
+.compact-card-row {
+    width: 100%;
+    min-width: 0;
+}
+
+.compact-card-group {
+    width: 100%;
+    min-width: 0;
+}
+
+.compact-card-group-indicator-top {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.compact-card-group-indicator-top.compact-card-special-wrapper {
+    border: 1px solid var(--primary-border-color);
+    border-radius: .2rem;
+    /*padding: .1rem;*/
+    align-items: center;
+}
+
+.compact-card-group-indicator-left {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    column-gap: .4rem;
+}
+
+.compact-card-group-content-shell {
+    width: 100%;
+    min-width: 0;
+
+    container-type: inline-size;
+    container-name: compact-card-content;
+}
+
+.compact-card-group-content-shell.wrapper-content-shell {
+    padding: 0 .15rem .15rem;
+}
+
+.compact-card-group-content {
+    --compact-card-columns: 3;
+
+    width: 100%;
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: repeat(var(--compact-card-columns), minmax(0, 1fr));
+    gap: .35rem;
+}
+
+/*
+ * El grupo intenta usar 3 columnas.
+ * Si el ancho real del contenedor no alcanza, baja automáticamente a 2.
+ */
+@container compact-card-content (max-width: 13.25rem) {
+    .compact-card-group-content {
+        --compact-card-columns: 2;
+    }
+    .compact-card-group-content.content-extra-position {
+        --compact-card-columns: 3;
+    }
+}
+
+/*
+ * Si tampoco alcanza para 2 columnas, baja a 1.
+ */
+@container compact-card-content (max-width: 8.75rem) {
+    .compact-card-group-content {
+        --compact-card-columns: 2;
+    }
+    .compact-card-group-content.content-extra-position {
+        --compact-card-columns: 3;
+    }
+}
+
+.compact-card-wrapper {
+    min-width: 0;
+    border-radius: 5px;
+}
+
+.compact-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    border-radius: .3rem;
+    gap: .15rem;
+    padding: .2rem .3rem;
+}
+
+.compact-card-span-color {
+    background: var(--span-color);
+    border: 1px solid var(--primary-border-color);
+}
+
+.compact-card-header {
+    min-width: 0;
+}
+
+.compact-card-values {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: .25rem;
+}
+
+.compact-card-column {
+    min-width: 0;
+
+    flex: 1 1 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .15rem;
+}
+
+.compact-card-title,
+.compact-card-label,
+.compact-card-value {
+    margin: 0;
+    min-width: 0;
+    max-width: 100%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.compact-card-title {
+    font-weight: 600;
+}
+
+.compact-card-title.extra-title {
+    flex-shrink: 0;
+    text-align: end;
+}
+
+.compact-card-label,
+.compact-card-value {
+    text-align: end;
+}
+
+.compact-card-row-indicator-wrapper {
+    min-width: 0;
+}
+.compact-card-row-indicator-wrapper.indicator-marker {
+    width: 100%;
+    text-align: center;
+}
+
+.compact-card-group--indicator-top .compact-card-row-indicator-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.compact-card-group--indicator-left .compact-card-row-indicator-wrapper {
+    width: auto;
+    padding-top: .15rem;
+}
+
+.compact-card-row-indicator {
+    margin: 0;
+    padding: .15rem .45rem;
+    background: var(--marker-color);
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    line-height: 1;
+    font-weight: 700;
+    /*font-size: .7rem;*/
+}
+
+
+@media only screen and (min-width: 350px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1366px) {}
+@media only screen and (min-width: 1536px) {
+    .compact-card-title.title.small {
+        font-size: .45rem;
+    }
+
+    .compact-card-title.title.medium {
+        font-size: .5rem;
+    }
+
+    .compact-card-title.extra-title {
+        font-size: .35rem;
+    }
+
+    .compact-card-value.small {
+        font-size: .45rem;
+    }
+
+    .compact-card-value.medium {
+        font-size: .5rem;
+    }
+
+    .compact-card-label.small {
+        font-size: .35rem;
+        width: 100%;
+    }
+
+    .compact-card-label.medium {
+        font-size: .4rem;
+    }
+
+    .compact-card-row-indicator {
+        font-size: .5rem;
+    }
+}
+@media only screen and (min-width: 1920px) {}

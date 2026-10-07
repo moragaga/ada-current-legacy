@@ -1,0 +1,38 @@
+#dashboard-shell-io-alarms {
+    height: 6.5rem;
+}
+
+.display-section-title {
+    background-color: var(--marker-color);
+    border-radius: .3rem;
+    padding: 0 .4rem;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 350px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 1280px) {
+    .fs-io-bc-100 {
+        font-size: .5rem;
+    }
+    .fs-io-bc-200 {
+        font-size: .45rem;
+    }
+    .fs-io-bc-300 {
+        font-size: .4rem;
+    }
+    .fs-io-bc-400 {
+        font-size: .35rem;
+    }
+    .fs-io-bc-500 {
+        font-size: .3rem;
+    }
+}
+@media only screen and (min-width: 1366px) {}
+@media only screen and (min-width: 1536px) {
+    .espesador-v1-img {
+        height: 1.3rem;
+    }
+}
+@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 2560px) {}

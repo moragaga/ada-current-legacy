@@ -1,0 +1,42 @@
+.information-time-status-container {
+    border-top: 1px solid var(--primary-border-color);
+}
+
+.app-header-inner {
+    padding: 0 .5rem;
+}
+.logo-wrapper {
+    padding-right: .5rem;
+}
+
+@media only screen and (min-width: 350px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 1280px) {
+    .fs-io-hi-100 {
+        font-size: .7rem;
+    }
+    .fs-io-hi-200 {
+        font-size: .6rem;
+    }
+
+    .information-time-status-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .information-time-status-container .item-value {
+        font-weight: 600;
+    }
+    .information-time-status-wrapper .time-value {
+        font-weight: 400;
+    }
+
+    .app-header-shell-logo-wrapper img {
+        height: 3rem;
+    }
+}
+@media only screen and (min-width: 1366px) {}
+@media only screen and (min-width: 1536px) {}
+@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 2560px) {}

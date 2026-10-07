@@ -1,0 +1,3 @@
+# EXECUTE RUFF PREVIOUS TO SAVE IN GIT
+ruff check . --fix; ruff format .
+ruff check . --fix && ruff format .

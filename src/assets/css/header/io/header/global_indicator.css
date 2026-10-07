@@ -1,0 +1,120 @@
+.app-header-shell {
+    background: var(--tertiary-background);
+    border-bottom: 1px solid var(--primary-border-color);
+}
+
+.global-indicator-wrapper table {
+    width: auto;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+.global-indicator-wrapper :is(
+    th,
+    td
+) {
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.global-indicator-wrapper .item-name {
+    padding: .3rem .4rem .3rem 0;
+    font-weight: 600;
+}
+.global-indicator-wrapper .real-value {
+    text-align: end;
+    padding: .3rem .1rem .3rem 0;
+    font-weight: 800;
+}
+.global-indicator-wrapper .plan-value {
+    text-align: start;
+    padding: .3rem 0 .3rem .1rem;
+    font-weight: 500;
+}
+.global-indicator-wrapper .value-divider {
+    padding: .3rem .1rem;
+}
+.global-indicator-wrapper th.th-row {
+    padding: .2rem .4rem;
+}
+.global-indicator-wrapper table p {
+    line-height: 1;
+}
+.global-indicator-wrapper .indicator-information {
+    font-weight: 600;
+}
+
+
+
+@media only screen and (min-width: 350px) {
+    .global-indicator-wrapper.border-left {
+        border-left: none;
+    }
+    .global-indicator-wrapper.border-right {
+        border-right: none;
+    }
+}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 1280px) {
+    .global-indicator-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .global-indicator-wrapper.border-left {
+        border-left: 1px solid var(--primary-border-color);
+    }
+    .global-indicator-wrapper.border-right {
+        border-right: 1px solid var(--primary-border-color);
+    }
+    .global-indicator-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        padding-left: 0;
+        width: calc(100% / 7);
+        min-height: 5.5rem;
+        gap: .3rem;
+    }
+
+    .fs-io-hg-100 {
+        font-size: .7rem;
+    }
+    .fs-io-hg-200 {
+        font-size: .6rem;
+    }
+    .fs-io-hg-300 {
+        font-size: .5rem;
+    }
+    .fs-io-hg-400 {
+        font-size: .4rem;
+    }
+    .fs-io-hg-500 {
+        font-size: .35rem;
+    }
+}
+@media only screen and (min-width: 1366px) {}
+@media only screen and (min-width: 1536px) {}
+@media only screen and (min-width: 1920px) {
+    .fs-io-hg-100 {
+        font-size: .75rem;
+    }
+    .fs-io-hg-200 {
+        font-size: .65rem;
+    }
+    .fs-io-hg-300 {
+        font-size: .55rem;
+    }
+    .fs-io-hg-400 {
+        font-size: .45rem;
+    }
+    .fs-io-hg-500 {
+        font-size: .4rem;
+    }
+}
+@media only screen and (min-width: 2560px) {}

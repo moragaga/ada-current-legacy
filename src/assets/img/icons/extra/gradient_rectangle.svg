@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="194.337" height="75.017" viewBox="0 0 194.337 75.017">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5b5c64"/>
+      <stop offset="0" stop-color="#efefef"/>
+      <stop offset="1" stop-color="#5b5c64"/>
+    </linearGradient>
+  </defs>
+  <path id="fondo_degradado" d="M124.188,253.464l-4.833-75.017h-184l-5.5,75.017Z" transform="translate(70.148 -178.447)" opacity="0.378" fill="url(#linear-gradient)"/>
+</svg>

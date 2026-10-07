@@ -1,0 +1,3 @@
+from .distributed_alarm_management_modal_host import build_distributed_alarm_management_modal_host
+
+__all__ = ['build_distributed_alarm_management_modal_host']

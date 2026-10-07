@@ -1,0 +1,76 @@
+.fs-compact-table-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.fs-compact-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fs-compact-table__header-cell {
+    padding: 0 0.25rem 0.1rem 0.25rem;
+    font-size: 0.52rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.fs-compact-table__cell {
+    padding: 0.04rem 0.25rem;
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 1.15;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.fs-compact-table__cell-content {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.fs-compact-table__marker {
+    display: inline-block;
+    width: 0.34rem;
+    height: 0.34rem;
+    min-width: 0.34rem;
+    margin-right: 0.15rem;
+    border-radius: 999px;
+    background: #ff2d55;
+}
+
+.fs-compact-table__row--span .fs-compact-table__cell {
+    padding-top: 0.3rem;
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: #5d5d5d;
+}
+
+.fs-compact-table__row--soft-danger .fs-compact-table__cell {
+    background: rgba(255, 45, 85, 0.09);
+}
+
+.fs-compact-table__row--soft-warning .fs-compact-table__cell {
+    background: rgba(255, 193, 7, 0.12);
+}
+
+.fs-compact-table__row--section .fs-compact-table__cell {
+    padding-top: 0.25rem;
+    font-weight: 700;
+    color: #555;
+}
+
+.fs-compact-table__cell--muted {
+    color: #9a9a9a;
+}
+
+.fs-compact-table__cell--state {
+    font-size: 0.62rem;
+    font-weight: 700;
+}
